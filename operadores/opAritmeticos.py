@@ -4,11 +4,16 @@ resta = 8 - 3
 
 # multiplicacion y division 
 multi = 30 * 9
-divi = 10 / 2 #devuelve un dato float 
+divi = 12 / 2 #devuelve un dato float 
 
 #potenciador (**)
 poterencia = 5**2
 
 #division baja 
-divisionBaja = 11//2
+divisionBaja = 12//2 #devuelve entero redondeado hacia abajo 
 
+# resto 
+
+resto = 12 % 7
+
+print(resto)
