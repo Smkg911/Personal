@@ -1,6 +1,7 @@
 #creando una funcion simple
 def saludar():
     print('hola lucas mi maestro')
+    
 # ejecutando la funcion simple     
 saludar()
 
@@ -19,7 +20,7 @@ saludar2('marcos', 'hombre')
 saludar2('Andrea', 'MujEr')
 saludar2('matias','fluido')
 
-#crar una funcion que nos retorne valores
+#crar una funcion que nos retorne varios valores
 def crearContraseniaRandom(num):
     chars = 'abcdefghij'
     value = str(num)
@@ -27,8 +28,13 @@ def crearContraseniaRandom(num):
     c1 = num  + 2
     c2 = num - 2
     c3 = num 
-    c4 = num +4
+    c4 = num + 4
     contrasenia = f"{chars[c1]}{chars[c2]}{chars[c3]}{chars[c4]}{num *2}"
-    print (contrasenia) 
-    
-crearContraseniaRandom(44564)
+    return contrasenia, num
+
+#desempaquetando la funcion
+pasword,PrimerNumero = crearContraseniaRandom(584) 
+
+#mostrando los resultados obtenidos y los datos utilizados para obtenerlos
+print(f'tu contrasenia es: {pasword}')
+print(f'el numweo utiizado para tu contrasenia fue: {PrimerNumero}')
