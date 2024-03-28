@@ -1,8 +1,8 @@
 # creando tupla con tuple() 
-tupla = tuple(["dato1", "dato2"])
+tupla = tuple(["Alejandro", 16])
 
 #se crea una tupla separando cada dato con una coma y si solo se quiere un dato se coloca la coma al final 
-tupla = "dato1","dato2"
+tupla = "Alejandro",16
 
 for tuplo in enumerate(tupla):
     indice = tuplo[0]

@@ -10,7 +10,7 @@ for numero in numeros:
     resultado = numero * 10
     print(resultado)
     
-# iterando dos listas del mismo tamanio al mismo tiempo
+# iterando dos listas del mismo tamanio al mismo tiempo con la funcion(zip)
 for numero,animal in zip(numeros,animales):
     print(f"recorriendo la lista 1:{numero}")
     print(f"recorriendo la lista 2:{animal}")
