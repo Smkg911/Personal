@@ -13,7 +13,7 @@ def saludar2(nombre,sexo):
     elif sexo == 'hombre':
         adjetivo = 'titan'
     else: 
-        adjetivo = 'wey'
+        adjetivo = 'estupido'
     print(f'hola {nombre}, mi {adjetivo} como andas')
     
 saludar2('marcos', 'hombre')
@@ -22,18 +22,18 @@ saludar2('matias','fluido')
 
 #crar una funcion que nos retorne varios valores
 def crearContraseniaRandom(num):
-    chars = 'abcdefghij'
+    chars = 'abcdefghijklmndkljglfjksgjkhsdjklhgkhdfghslfghsdkjfhgskjdghskjopq'
     value = str(num)
     num = int(value[0])
     c1 = num  + 2
     c2 = num - 2
     c3 = num 
-    c4 = num + 4
+    c4 = num * 3
     contrasenia = f"{chars[c1]}{chars[c2]}{chars[c3]}{chars[c4]}{num *2}"
     return contrasenia, num
 
 #desempaquetando la funcion
-pasword,PrimerNumero = crearContraseniaRandom(584) 
+pasword,PrimerNumero = crearContraseniaRandom(9) 
 
 #mostrando los resultados obtenidos y los datos utilizados para obtenerlos
 print(f'tu contrasenia es: {pasword}')

@@ -29,7 +29,7 @@ lista.sort()#  si aplicamos el parametro reverse = true se invierte al ordenar
 lista.reverse()
 
 # verificando si un elemento completos que se encuentra en la lista (index)
-elementoEncontrado = lista.index()
+elementoEncontrado = lista.index(False)
 
 
-print()
+print(elementoEncontrado)
